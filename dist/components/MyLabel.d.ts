@@ -1,6 +1,4 @@
-
-import './MyLabel.css'
-
+import './MyLabel.css';
 interface MyLabelProps {
     /**
     * Label contents
@@ -27,19 +25,5 @@ interface MyLabelProps {
      */
     fontColor?: string;
 }
-
-
-
-export const MyLabel = ({
-    labelName = "Label",
-    size = "normal",
-    color = "primary",
-    allCaps = false,
-    fontColor,
-}: MyLabelProps) => {
-    return (
-        <span className={`label ${size} text-${color}`} style={{ color: fontColor }}>
-            {allCaps ? labelName.toUpperCase() : labelName}
-        </span>
-    )
-};
+export declare const MyLabel: ({ labelName, size, color, allCaps, fontColor, }: MyLabelProps) => import("react/jsx-runtime").JSX.Element;
+export {};

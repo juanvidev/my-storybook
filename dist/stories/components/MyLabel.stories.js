@@ -1,51 +1,44 @@
-
-import { Meta, StoryObj } from "@storybook/react";
-import { MyLabel } from "../../components/MyLabel";
-
-const labelMeta: Meta<typeof MyLabel> = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CustomFontColor = exports.Tertiary = exports.Secondary = exports.AllCaps = exports.Basic = void 0;
+var MyLabel_1 = require("../../components/MyLabel");
+var labelMeta = {
     title: 'UI/MyLabel',
-    component: MyLabel,
+    component: MyLabel_1.MyLabel,
     tags: ['autodocs'],
     argTypes: {
         color: { control: 'select' },
         fontColor: { control: 'color' },
     },
-}
-
-export default labelMeta;
-
-type Story = StoryObj<typeof MyLabel>;
-
-
-export const Basic: Story = {
+};
+exports.default = labelMeta;
+exports.Basic = {
     args: {
         size: 'normal',
         allCaps: false,
         color: 'primary'
     }
-}
-
-export const AllCaps: Story = {
+};
+exports.AllCaps = {
     args: {
         size: 'normal',
         allCaps: true,
         color: 'primary'
     }
-}
-export const Secondary: Story = {
+};
+exports.Secondary = {
     args: {
         size: 'normal',
         color: 'secondary'
     }
-}
-export const Tertiary: Story = {
+};
+exports.Tertiary = {
     args: {
         size: 'normal',
         color: 'tertiary',
     }
-}
-
-export const CustomFontColor: Story = {
+};
+exports.CustomFontColor = {
     args: {
         size: 'h1',
         fontColor: '#5517ac',
