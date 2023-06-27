@@ -1,7 +1,7 @@
 
 import './MyLabel.css'
 
-interface MyLabelProps {
+export interface MyLabelProps {
     /**
     * Label contents
     */
@@ -43,3 +43,6 @@ export const MyLabel = ({
         </span>
     )
 };
+
+
+export default MyLabel;
